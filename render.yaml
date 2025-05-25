@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: backend
+    env: docker
+    plan: free
+    rootDir: backend
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+
+  - type: web
+    name: frontend
+    env: docker
+    plan: free
+    rootDir: frontend
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ""
