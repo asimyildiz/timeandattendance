@@ -1,0 +1,34 @@
+{
+  "name": "time-and-attendance",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite --port 3000 --open",
+    "dev": "vite --port 3000 --open",
+    "build": "vite build",
+    "serve": "vite preview --open",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "jsdom": "^26.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.7",
+    "vite": "^6.2.1",
+    "vitest": "^3.0.8"
+  },
+  "description": "<h1 align=\"center\">\r Time and Attendance Validator\r </h1>",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
