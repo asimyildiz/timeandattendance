@@ -31,6 +31,10 @@ def serialize(obj: Any) -> Any:
         return {k: serialize(v) for k, v in obj.items()}
     else:
         return obj
+    
+@app.get("/")
+async def welcome():
+    return JSONResponse(content="Welcome")
 
 @app.post("/analyze")
 async def analyze_excel(file: UploadFile = File(...)):
