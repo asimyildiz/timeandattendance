@@ -3,7 +3,7 @@ import axios from 'axios';
 import ExceptionTable from './Exceptions';
 import Message from './Message';
 
-const apiBaseUrl = "http://127.0.0.1:8000"
+const apiBaseUrl = "https://idearun.app/api"
 
 export default function App() {
   const [file, setFile] = useState(null);
@@ -40,7 +40,7 @@ export default function App() {
 
   return (
     <div className="p-4 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Excel Exception Analyzer</h1>
+      <h1 className="text-2xl font-bold mb-4">Time and Attendance Validator</h1>
 
       <input type="file" onChange={handleFileChange} className="mb-4" />
       <button
