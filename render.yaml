@@ -5,7 +5,11 @@ services:
     plan: free
     rootDir: backend
     dockerfilePath: Dockerfile
+    autoDeploy: true
     healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8000
 
   - type: web
     name: frontend
@@ -13,5 +17,7 @@ services:
     plan: free
     rootDir: frontend
     dockerfilePath: Dockerfile
-    buildCommand: ""
-    startCommand: ""
+    autoDeploy: true
+    envVars:
+      - key: BACKEND_URL
+        value: https://backend-e9yy.onrender.com

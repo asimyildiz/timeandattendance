@@ -3,6 +3,8 @@ import axios from 'axios';
 import ExceptionTable from './Exceptions';
 import Message from './Message';
 
+const apiBaseUrl = import.meta.env.BACKEND_URL;
+
 export default function App() {
   const [file, setFile] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -23,7 +25,7 @@ export default function App() {
     setData(null);
 
     try {
-      const response = await axios.post('http://localhost:8000/analyze', formData, {
+      const response = await axios.post(`${apiBaseUrl}/analyze`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
