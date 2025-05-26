@@ -3,6 +3,10 @@ FROM node:20-alpine as build
 
 WORKDIR /app
 
+# Pass env at build time
+ARG BACKEND_URL
+ENV BACKEND_URL=$BACKEND_URL
+
 # Install dependencies
 COPY package.json package-lock.json* ./
 RUN npm install

@@ -21,3 +21,4 @@ services:
     envVars:
       - key: BACKEND_URL
         value: https://backend-e9yy.onrender.com
+        build: true
