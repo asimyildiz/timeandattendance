@@ -3,7 +3,7 @@ import axios from 'axios';
 import ExceptionTable from './Exceptions';
 import Message from './Message';
 
-const apiBaseUrl = import.meta.env.BACKEND_URL;
+const apiBaseUrl = "http://127.0.0.1:8000"
 
 export default function App() {
   const [file, setFile] = useState(null);
